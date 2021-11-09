@@ -8,4 +8,12 @@ class Shovel extends Baseclass{
         this.image = loadImage("sprites/shovel.png")
 
         }
+        display(){
+          super.display()
+          var pos = this.body.position;
+          push()
+          pos.x = mouseX;
+          pos.y = mouseY;
+          pop()
+        }
 }
